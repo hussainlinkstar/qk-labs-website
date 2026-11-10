@@ -4,10 +4,17 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { siteConfig } from "@/lib/site-config";
 
+const PAGE_LINKS = [
+  { href: "/", label: "Home" },
+  { href: "/pricing", label: "Pricing" },
+  { href: "/about", label: "About" },
+  { href: "/enterprise", label: "Enterprise" },
+  { href: "/contact", label: "Contact" },
+] as const;
+
 export default function Nav() {
   const pathname = usePathname();
   const isHome = pathname === "/";
-  const isContact = pathname === "/contact";
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -32,8 +39,6 @@ export default function Nav() {
     </a>
   );
 
-  const homeHash = (hash: string) => (isHome ? hash : `/${hash}`);
-
   return (
     <header className={`site-header${mobileMenuOpen ? " is-mobile-open" : ""}`} id="site-header">
       <div className="header-top-bar" />
@@ -44,12 +49,9 @@ export default function Nav() {
           </a>
           <nav className="main-nav" aria-label="Main navigation">
             <ul>
-              <li>{link("/", "Home", isHome)}</li>
-              <li>{link(homeHash("#see"), "Insights")}</li>
-              <li>{link(homeHash("#path"), "How it works")}</li>
-              <li>{link(homeHash("#build-how"), "Workers")}</li>
-              <li>{link(homeHash("#products"), "Products")}</li>
-              <li>{link("/contact", "Contact", isContact)}</li>
+              {PAGE_LINKS.map((item) => (
+                <li key={item.href}>{link(item.href, item.label, pathname === item.href)}</li>
+              ))}
               <li>
                 <a href={siteConfig.signalUrl} className="nav-link" rel="noopener noreferrer">
                   Signal
@@ -58,7 +60,7 @@ export default function Nav() {
             </ul>
           </nav>
           <div className="header-actions">
-            <a href={isHome ? "#enquire" : "/#enquire"} className="link-plain">
+            <a href={isHome ? "#enquire" : "/contact"} className="link-plain">
               Enquire
             </a>
             <a
@@ -98,12 +100,7 @@ export default function Nav() {
         aria-hidden={!mobileMenuOpen}
         inert={!mobileMenuOpen}
       >
-        {link("/", "Home", isHome)}
-        {link(homeHash("#see"), "Insights")}
-        {link(homeHash("#path"), "How it works")}
-        {link(homeHash("#build-how"), "Workers")}
-        {link(homeHash("#products"), "Products")}
-        {link("/contact", "Contact", isContact)}
+        {PAGE_LINKS.map((item) => link(item.href, item.label, pathname === item.href))}
         <a
           href={siteConfig.signalUrl}
           className="nav-link"
@@ -113,11 +110,7 @@ export default function Nav() {
           Signal
         </a>
         <hr />
-        <a
-          href={isHome ? "#enquire" : "/#enquire"}
-          className="link-plain"
-          onClick={closeMobile}
-        >
+        <a href={isHome ? "#enquire" : "/contact"} className="link-plain" onClick={closeMobile}>
           Enquire
         </a>
         <a
