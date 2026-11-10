@@ -749,7 +749,7 @@ body:has(.site-header.is-mobile-open) {
     linear-gradient(165deg, #fcfbff 0%, #f5f0fb 48%, #f0f4ff 100%);
 }
 
-.hero-stage--signal {
+.hero-stage--ship {
   background:
     radial-gradient(ellipse 80% 60% at 72% 18%, rgba(20, 176, 136, 0.14), transparent 55%),
     linear-gradient(165deg, #f8fffc 0%, #f1f8f5 48%, #eef6ff 100%);
@@ -1475,6 +1475,22 @@ body:has(.site-header.is-mobile-open) {
 
 .way-card-dark .way-copy h3 {
   color: var(--purple);
+}
+
+.way-flow-graphic {
+  width: min(220px, 42%);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.way-flow-graphic-img {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 24px rgba(38, 45, 51, 0.12));
 }
 
 .way-head {

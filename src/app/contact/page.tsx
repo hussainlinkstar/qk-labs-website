@@ -7,7 +7,7 @@ import { getSiteBaseUrl, siteConfig } from "@/lib/site-config";
 
 const title = "Contact Qiko Labs | Pulse and custom AI builds";
 const description =
-  "Book a Pulse demo or enquire about a custom AI worker. Signal visibility stays on qiko.ai.";
+  "Book a Pulse demo or start a Labs build — tell us the systems involved and the outcome you need.";
 
 export const metadata: Metadata = {
   title,
@@ -28,8 +28,8 @@ export default function ContactPage() {
         <section className="hero blog-hero" id="top">
           <div className="hero-bg" aria-hidden="true" />
           <div className="reveal">
-            <span className="how-eyebrow">Contact</span>
-            <h1 className="hero-title">Talk to Qiko Labs</h1>
+            <span className="how-eyebrow">Talk to Labs</span>
+            <h1 className="hero-title">Start a Labs build</h1>
             <p className="hero-sub">
               Book a demo for Pulse, or send an enquiry about a custom AI worker.
             </p>
@@ -41,12 +41,8 @@ export default function ContactPage() {
             <div className="contact-copy">
               <h2>Book a demo or enquire</h2>
               <p>
-                Prefer a live walkthrough? Schedule on Calendly. Prefer email? Use the form —
-                Signal questions still go to{" "}
-                <a href={siteConfig.signalUrl} rel="noopener noreferrer">
-                  qiko.ai
-                </a>
-                .
+                Prefer a live walkthrough? Schedule on Calendly. Prefer email? Use the form and tell
+                us what you want to build.
               </p>
               <a
                 href={siteConfig.calendlyUrl}

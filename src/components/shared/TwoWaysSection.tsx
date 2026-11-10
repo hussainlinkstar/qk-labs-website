@@ -1,5 +1,4 @@
 import LabsRevealGraphic from "@/components/shared/LabsRevealGraphic";
-import SignalOrbitGraphic from "@/components/shared/SignalOrbitGraphic";
 
 export type WayFeature = {
   title: string;
@@ -14,7 +13,7 @@ export type WayCard = {
   ctaLabel: string;
   ctaHref: string;
   variant?: "default" | "dark";
-  graphic: "signal-orbit" | "labs-reveal";
+  graphic: "flow-radial" | "labs-reveal";
   outline?: boolean;
 };
 
@@ -24,6 +23,19 @@ type Props = {
   description: string;
   cards: readonly WayCard[];
 };
+
+function WayGraphic({ graphic }: { graphic: WayCard["graphic"] }) {
+  if (graphic === "labs-reveal") return <LabsRevealGraphic />;
+  return (
+    <div className="way-flow-graphic" aria-hidden="true">
+      <img
+        src="/qiko-static/assets/qiko-flow-radial2.svg"
+        alt=""
+        className="way-flow-graphic-img"
+      />
+    </div>
+  );
+}
 
 export default function TwoWaysSection({
   id = "products",
@@ -49,7 +61,7 @@ export default function TwoWaysSection({
                   <h3>{card.title}</h3>
                   <p>{card.body}</p>
                 </div>
-                {card.graphic === "signal-orbit" ? <SignalOrbitGraphic /> : <LabsRevealGraphic />}
+                <WayGraphic graphic={card.graphic} />
               </div>
               <ul className="way-features">
                 {card.features.map((feature) => (

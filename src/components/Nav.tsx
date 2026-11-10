@@ -52,16 +52,11 @@ export default function Nav() {
               {PAGE_LINKS.map((item) => (
                 <li key={item.href}>{link(item.href, item.label, pathname === item.href)}</li>
               ))}
-              <li>
-                <a href={siteConfig.signalUrl} className="nav-link" rel="noopener noreferrer">
-                  Signal
-                </a>
-              </li>
             </ul>
           </nav>
           <div className="header-actions">
             <a href={isHome ? "#enquire" : "/contact"} className="link-plain">
-              Enquire
+              Talk to Labs
             </a>
             <a
               href={siteConfig.calendlyUrl}
@@ -101,17 +96,9 @@ export default function Nav() {
         inert={!mobileMenuOpen}
       >
         {PAGE_LINKS.map((item) => link(item.href, item.label, pathname === item.href))}
-        <a
-          href={siteConfig.signalUrl}
-          className="nav-link"
-          rel="noopener noreferrer"
-          onClick={closeMobile}
-        >
-          Signal
-        </a>
         <hr />
         <a href={isHome ? "#enquire" : "/contact"} className="link-plain" onClick={closeMobile}>
-          Enquire
+          Talk to Labs
         </a>
         <a
           href={siteConfig.calendlyUrl}

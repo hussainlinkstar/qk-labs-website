@@ -17,20 +17,20 @@ const BEATS = [
   {
     label: "Workers",
     title: "Custom AI workers",
-    body: "When the product is not enough, Labs ships the workflow.",
+    body: "When the product is not enough, Labs ships the workflow into production.",
     icon: "/qiko-static/assets/icons/labs-worker-purple.svg",
     visual: "/qiko-static/assets/labs-hero-device.png",
     visualAlt: "Custom Labs AI worker on device",
     tint: "workers",
   },
   {
-    label: "Signal",
-    title: "Signal stays separate",
-    body: "AI visibility lives on qiko.ai — Labs starts where Signal stops.",
-    icon: "/qiko-static/assets/icons/signal-scan-icon-purple.svg",
-    visual: "/qiko-static/assets/start-with-signal.png",
-    visualAlt: "Signal AI visibility product",
-    tint: "signal",
+    label: "Ship",
+    title: "Ship with the receipts",
+    body: "Validated with real customers, hardened with feedback, ready to sell on.",
+    icon: "/qiko-static/assets/icons/ranking.svg",
+    visual: "/qiko-static/assets/build-with-qiko-labs.webp",
+    visualAlt: "Qiko Labs build and ship graphic",
+    tint: "ship",
   },
 ] as const;
 

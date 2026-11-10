@@ -23,7 +23,8 @@ export function getCalendlyUrl(): string {
 
 export const siteConfig = {
   name: "Qiko Labs",
-  tagline: "B2B AI for teams that need Pulse — and custom builds when the product is not enough.",
+  tagline:
+    "Prototypes don't ship. We do. Pulse on CRM plus custom AI workers — built, tested, and embedded by Labs.",
   calendlyUrl: getCalendlyUrl(),
   signalUrl: getSignalSiteUrl(),
   signalLabsPath: `${getSignalSiteUrl()}/labs`,

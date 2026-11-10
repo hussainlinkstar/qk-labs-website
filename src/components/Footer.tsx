@@ -12,17 +12,17 @@ export default function Footer() {
               width="100"
               height="41"
             />
-            <p>Be visible, understood, and ready for a world where AI does the searching.</p>
+            <p>
+              Qiko Labs builds Pulse and custom AI workers — mobilise, test with real customers, and
+              ship with the receipts.
+            </p>
           </div>
           <div className="footer-cols">
             <div className="footer-col">
               <span className="footer-col-title">Product</span>
-              <a href="/#see">Insights</a>
+              <a href="/#see">How Labs ships</a>
               <a href="/#build-how">Workers</a>
               <a href="/pricing">Pricing</a>
-              <a href={siteConfig.signalUrl} rel="noopener noreferrer">
-                Signal
-              </a>
             </div>
             <div className="footer-col">
               <span className="footer-col-title">Company</span>
@@ -35,8 +35,8 @@ export default function Footer() {
               <a href={siteConfig.calendlyUrl} rel="noopener noreferrer" target="_blank">
                 Book a demo
               </a>
-              <a href="/contact">Enquire</a>
-              <a href="/enterprise">Talk to Enterprise</a>
+              <a href="/contact">Talk to Labs</a>
+              <a href="/enterprise">Enterprise</a>
             </div>
           </div>
         </div>

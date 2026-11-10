@@ -6,15 +6,11 @@ export default function ContactBand() {
     <section className="section contact-section" id="enquire">
       <div className="section-inner contact-grid">
         <div className="contact-copy">
-          <p className="how-eyebrow">Get started</p>
-          <h2>Book a demo or send an enquiry</h2>
+          <p className="how-eyebrow">Talk to Labs</p>
+          <h2>Start a Labs build</h2>
           <p>
-            Schedule time for Pulse, or tell us about a custom AI worker. Signal visibility questions
-            still belong on{" "}
-            <a href={siteConfig.signalUrl} rel="noopener noreferrer">
-              qiko.ai
-            </a>
-            .
+            Tell us what you want to build, the systems involved, and the outcome you need. Book a
+            demo for Pulse, or send an enquiry for a custom worker.
           </p>
           <a
             href={siteConfig.calendlyUrl}

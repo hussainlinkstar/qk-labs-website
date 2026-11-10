@@ -19,7 +19,7 @@ import {
   platformHandleCards,
   seeHowAiCards,
   twoWaysCards,
-  visibilitySteps,
+  labsDeliverySteps,
   whyWorkerCards,
 } from "@/lib/home-sections";
 
@@ -31,16 +31,17 @@ export default function HomePage() {
         <Hero />
         <FeatureCardsSection
           id="see"
-          title="See how AI sees your business"
-          description="Pulse shows where CRM context creates opportunity — and where the team needs a clearer next step. Then Labs can build when the product alone is not enough."
+          eyebrow="How Labs ships"
+          title="Built. Tested. Proven."
+          description="Mobilise an agent squad, validate with real customers, then harden and embed workers into the workflows that matter — including Pulse on CRM."
           items={seeHowAiCards}
-          note="Strong operational clarity is the foundation. Here is what it unlocks."
+          note="Ship with the receipts — evidence you can sell on."
         />
         <StepsPathSection
           id="path"
-          title="Visibility is step one."
-          description="Getting the right signal from your business data is where it starts. Being understood accurately and eventually acted on is where it goes. Qiko Labs takes you along that path at your pace."
-          steps={visibilitySteps}
+          title="From brief to embedded worker."
+          description="Labs runs a delivery path that ends in production use: mobilise, test with customers, then harden and embed."
+          steps={labsDeliverySteps}
         />
         <FeatureCardsSection
           id="why-workers"
@@ -51,8 +52,8 @@ export default function HomePage() {
           note="Why specialised workers beat generic chat for high-stakes B2B work."
         />
         <BuildHowSection
-          title="From idea to a production-ready digital worker"
-          description="Four steps to describe, train, deploy, and operate a custom AI worker with Labs."
+          title="Mobilise · Test · Harden · Embed"
+          description="Four stages to take a Labs build from orchestrator squad to native workers in your workflows."
           steps={buildWorkerSteps}
         />
         <CreatorStory />
@@ -70,7 +71,7 @@ export default function HomePage() {
               <img src="/qiko-static/assets/qiko-logo.png" alt="Qiko" width={91} height={37} />
             </>
           }
-          description="Run Signal to see where you stand on AI visibility, or bring Labs a harder problem and we will build the worker for it. Either way, you own the result."
+          description="Start with Pulse on your CRM, or bring Labs a harder problem and we will build, test, and embed the worker."
           cards={twoWaysCards}
         />
         <FaqAccordion items={homeFaqs} />

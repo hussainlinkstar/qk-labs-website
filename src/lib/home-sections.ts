@@ -2,81 +2,81 @@ import type { FeatureCardItem } from "@/components/shared/FeatureCardsSection";
 import type { FaqItem } from "@/components/shared/FaqAccordion";
 import type { StepItem } from "@/components/shared/StepsPathSection";
 import type { WayCard } from "@/components/shared/TwoWaysSection";
-import { siteConfig } from "@/lib/site-config";
 
 export const seeHowAiCards: FeatureCardItem[] = [
   {
-    title: "Know your Pulse",
-    body: "See the insights Pulse can surface from the CRM context your team already trusts.",
-    icon: "/qiko-static/assets/icons/know-your-score.svg",
+    title: "Mobilise the squad",
+    body: "An orchestrator spins up research, prototype, FE/BE, and QA agents to build at AI-native speed.",
+    icon: "/qiko-static/assets/icons/labs-worker.svg",
     tint: "blue",
   },
   {
-    title: "See the gap",
-    body: "Where coverage, relationships, or follow-through are thin — and what to do next.",
-    icon: "/qiko-static/assets/icons/see-the-gap.svg",
+    title: "Test with real customers",
+    body: "Labs puts the build in front of a live customer ecosystem — feedback comes back as tickets, not slide decks.",
+    icon: "/qiko-static/assets/icons/labs-search-normal.svg",
     tint: "orange",
   },
   {
-    title: "Act on it",
-    body: "Accept insights into actions, or scope a custom AI worker when Pulse is not enough.",
-    icon: "/qiko-static/assets/icons/act-on-it.svg",
+    title: "Harden and embed",
+    body: "Ship a worker you can sell on — then embed it into sales, finance, concierge, or CRM workflows with Pulse.",
+    icon: "/qiko-static/assets/icons/secure-compliant.svg",
     tint: "red",
   },
 ];
 
-export const visibilitySteps: StepItem[] = [
+/** Labs delivery path (Mobilise → Test → Harden & embed). */
+export const labsDeliverySteps: StepItem[] = [
   {
     label: "Step 1",
     status: "Live",
-    title: "Discover",
-    body: "Pulse finds the signals in your CRM and operations that the team should not miss.",
-    icon: "/qiko-static/assets/icons/search-status.svg",
+    title: "Mobilise",
+    body: "Spin up the agent squad and scope the worker against a real outcome — not a prototype graveyard.",
+    icon: "/qiko-static/assets/icons/labs-worker.svg",
   },
   {
     label: "Step 2",
     status: "Available",
-    title: "Be Understood",
-    body: "Structure the insight so owners can understand the evidence and the next move.",
-    icon: "/qiko-static/assets/icons/layer.svg",
+    title: "Test",
+    body: "Validate with sales and real customers. Feedback becomes tickets that go straight back into the build.",
+    icon: "/qiko-static/assets/icons/labs-search-normal.svg",
   },
   {
     label: "Step 3",
     status: "On the horizon",
-    title: "Transact",
-    body: "Be ready for agent-assisted workflows and custom workers when the work gets harder.",
-    icon: "/qiko-static/assets/icons/ranking.svg",
+    title: "Harden & embed",
+    body: "Prove it in production, then embed native AI workers into the workflows that need them.",
+    icon: "/qiko-static/assets/icons/custom-integration.svg",
   },
 ];
 
 export const twoWaysCards: WayCard[] = [
   {
-    title: "Start with Signal",
-    body: "Run a free assessment, see where you stand, and subscribe to track and improve your AI visibility over time. Best if you want to act now and move fast.",
-    graphic: "signal-orbit",
-    ctaLabel: "Go to Signal",
-    ctaHref: siteConfig.signalUrl,
+    title: "Start with Pulse",
+    body: "B2B AI intelligence on your CRM and operations — insights, actions, and value from the records your team already trusts.",
+    graphic: "flow-radial",
+    ctaLabel: "Book a Pulse demo",
+    ctaHref: "/#enquire",
     features: [
       {
-        title: "Scan across top AI engines",
-        body: "ChatGPT, Gemini, Claude and more.",
-        icon: "/qiko-static/assets/icons/scan-across-top.svg",
+        title: "CRM-grounded insights",
+        body: "Surface opportunity and risk from context you already own.",
+        icon: "/qiko-static/assets/icons/labs-flash-purple.svg",
       },
       {
-        title: "Understand your gaps",
-        body: "Why competitors appear instead of you.",
-        icon: "/qiko-static/assets/icons/understand-your-gap.svg",
+        title: "Clear next actions",
+        body: "Owners see the evidence and the move — not another opaque score.",
+        icon: "/qiko-static/assets/icons/act-on-it.svg",
       },
       {
-        title: "Take action & improve",
-        body: "Get prioritised fixes and check progress.",
-        icon: "/qiko-static/assets/icons/token-action.svg",
+        title: "Path to custom workers",
+        body: "When Pulse is not enough, Labs scopes the bespoke build.",
+        icon: "/qiko-static/assets/icons/labs-worker-purple.svg",
       },
     ],
   },
   {
     title: "Build with Qiko Labs",
-    body: "For teams that want Pulse on CRM, or custom AI workers and agentic workflows without managing models, infrastructure, or security.",
+    body: "Custom AI workers and agentic workflows — from orchestrator squad to real customers to embedded production systems.",
     graphic: "labs-reveal",
     variant: "dark",
     ctaLabel: "Talk to Labs",
@@ -84,19 +84,19 @@ export const twoWaysCards: WayCard[] = [
     outline: false,
     features: [
       {
-        title: "Secure & compliant",
-        body: "Your data encrypted, available through Qiko managed infrastructure.",
-        icon: "/qiko-static/assets/icons/secure-compliant.svg",
+        title: "Working product in use",
+        body: "Not a procurement-dead prototype — shipped and used.",
+        icon: "/qiko-static/assets/icons/labs-flash-purple.svg",
       },
       {
-        title: "Custom integrations",
-        body: "Connect the systems your team already uses.",
-        icon: "/qiko-static/assets/icons/custom-integration.svg",
+        title: "Validated live",
+        body: "Tested in a real customer ecosystem with feedback loops.",
+        icon: "/qiko-static/assets/icons/labs-search-status.svg",
       },
       {
-        title: "Dedicated support",
-        body: "Strategy and ongoing optimisation with Labs.",
-        icon: "/qiko-static/assets/icons/dedicated-support.svg",
+        title: "Built by a shipping team",
+        body: "Hardened with evidence you can sell on.",
+        icon: "/qiko-static/assets/icons/ranking.svg",
       },
     ],
   },
@@ -132,27 +132,27 @@ export const whyWorkerCards: FeatureCardItem[] = [
 export const buildWorkerSteps = [
   {
     step: "01",
-    title: "Describe your digital worker",
-    body: "Start in plain English. Tell Labs what the worker should do, who it helps, and how it should behave.",
-    icon: "/qiko-static/assets/icons/communication-icon.svg",
+    title: "Mobilise",
+    body: "Describe the outcome. Labs spins up research, prototype, build, and QA agents around your brief.",
+    icon: "/qiko-static/assets/icons/labs-worker.svg",
   },
   {
     step: "02",
-    title: "Upload your expertise",
-    body: "Share documents, transcripts, decision logs, and knowledge so the worker learns your edge.",
-    icon: "/qiko-static/assets/icons/labs-element4-purple.svg",
+    title: "Test with customers",
+    body: "Put the worker in front of a live ecosystem. Feedback returns as tickets, not opinions.",
+    icon: "/qiko-static/assets/icons/labs-search-normal.svg",
   },
   {
     step: "03",
-    title: "Labs configures and deploys",
-    body: "We pick the model fit, wire retrieval, integrate APIs, and handle infrastructure and security.",
-    icon: "/qiko-static/assets/icons/labs-setting3-purple.svg",
+    title: "Harden & prove",
+    body: "Iterate from real deployments until the worker is reliable enough to sell on.",
+    icon: "/qiko-static/assets/icons/secure-compliant.svg",
   },
   {
     step: "04",
-    title: "Launch and operate",
-    body: "Ship behind secure APIs and a hosted interface — ready for your team or your customers.",
-    icon: "/qiko-static/assets/icons/labs-initiate.svg",
+    title: "Embed",
+    body: "Qiko Creator embeds native AI workers into sales, finance, concierge, or CRM workflows.",
+    icon: "/qiko-static/assets/icons/custom-integration.svg",
   },
 ] as const;
 
@@ -230,18 +230,18 @@ export const creatorStory = {
 export const homeFaqs: FaqItem[] = [
   {
     q: "What is Qiko Labs?",
-    a: "Labs is the B2B home for Pulse and custom AI workers. Signal stays on qiko.ai for AI visibility.",
+    a: "Labs builds Pulse for B2B teams and custom AI workers — from orchestrator squads to real-customer validation to production embed.",
   },
   {
-    q: "What's the difference between Signal and Labs?",
-    a: "Signal audits and scores your AI visibility so you know where you stand. Labs builds Pulse and custom AI workers once you need to go further than visibility.",
+    q: "How is Labs different from a typical AI prototype?",
+    a: "Prototypes stall in procurement. Labs ships working product, tests it with real customers, hardens from feedback, and embeds it into workflows you can sell on.",
   },
   {
-    q: "Do I need Signal to use Labs?",
-    a: "No. Teams come to Labs for Pulse or a custom build. Many customers use both, with a clear product split.",
+    q: "What is Pulse?",
+    a: "Pulse is Labs’ B2B AI intelligence on CRM and operations — insights and actions from the records your team already trusts. When you need more, Labs scopes a custom worker.",
   },
   {
     q: "How do I get started?",
-    a: "Book a Labs demo for Pulse, or enquire about a custom worker. For AI visibility, start with a free assessment on qiko.ai.",
+    a: "Book a Labs demo for Pulse, or enquire about a custom build. Tell us the systems involved and the outcome you need.",
   },
 ];

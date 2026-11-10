@@ -7,10 +7,10 @@ export default function CtaBand() {
         <div className="cta-panel">
           <div className="cta-panel-inner cta-panel-inner--simple">
             <div className="cta-copy">
-              <h3>Ready for Pulse?</h3>
+              <h3>Ready to ship with Labs?</h3>
               <p>
-                Book a demo for B2B intelligence on your CRM, or enquire about a
-                custom AI worker.
+                Book a demo for Pulse on CRM, or start a custom AI worker build with real-customer
+                validation baked in.
               </p>
             </div>
             <div className="cta-buttons">
@@ -24,7 +24,7 @@ export default function CtaBand() {
                 <img src="/qiko-static/assets/icons/arrow-white.svg" alt="" />
               </a>
               <a href="/#enquire" className="btn btn-outline">
-                Enquire
+                Talk to Labs
                 <img
                   src="/qiko-static/assets/icons/arrow-white.svg"
                   className="arrow-purple"
