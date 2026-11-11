@@ -10,7 +10,7 @@ export default function ContactBand() {
           <h2>Start a Labs build</h2>
           <p>
             Tell us what you want to build, the systems involved, and the outcome you need. Book a
-            demo for Pulse, or send an enquiry for a custom worker.
+            call for Pulse, or send an enquiry for a custom worker.
           </p>
           <a
             href={siteConfig.calendlyUrl}
@@ -18,7 +18,7 @@ export default function ContactBand() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            Book a demo
+            Book a call
             <img src="/qiko-static/assets/icons/arrow-white.svg" alt="" />
           </a>
         </div>

@@ -7,7 +7,7 @@ import { getSiteBaseUrl, siteConfig } from "@/lib/site-config";
 
 const title = "Contact Qiko Labs | Pulse and custom AI builds";
 const description =
-  "Book a Pulse demo or start a Labs build — tell us the systems involved and the outcome you need.";
+  "Book a call for Pulse or start a Labs build — tell us the systems involved and the outcome you need.";
 
 export const metadata: Metadata = {
   title,
@@ -31,7 +31,7 @@ export default function ContactPage() {
             <span className="how-eyebrow">Talk to Labs</span>
             <h1 className="hero-title">Start a Labs build</h1>
             <p className="hero-sub">
-              Book a demo for Pulse, or send an enquiry about a custom AI worker.
+              Book a call for Pulse, or send an enquiry about a custom AI worker.
             </p>
           </div>
         </section>
@@ -39,7 +39,7 @@ export default function ContactPage() {
         <section className="section contact-section" id="contact">
           <div className="section-inner contact-grid">
             <div className="contact-copy">
-              <h2>Book a demo or enquire</h2>
+              <h2>Book a call or enquire</h2>
               <p>
                 Prefer a live walkthrough? Schedule on Calendly. Prefer email? Use the form and tell
                 us what you want to build.
@@ -50,7 +50,7 @@ export default function ContactPage() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Book a demo
+                Book a call
                 <img src="/qiko-static/assets/icons/arrow-white.svg" alt="" />
               </a>
             </div>

@@ -27,7 +27,7 @@ App runs at [http://localhost:3001](http://localhost:3001).
 | --- | --- |
 | `NEXT_PUBLIC_SITE_URL` | Canonical origin (`https://qikolabs.com`) |
 | `NEXT_PUBLIC_SIGNAL_SITE_URL` | Link out to Signal (`https://qiko.ai`) |
-| `NEXT_PUBLIC_CALENDLY_URL` | Calendly scheduling URL for Book a demo |
+| `NEXT_PUBLIC_CALENDLY_URL` | Calendly scheduling URL for Book a call |
 | `NEXT_PUBLIC_APP_BASE_URL` | Optional qiko-core base; proxies enquiry to `/api/v1/marketing/labs-contact` |
 | `SITE_NOINDEX` | Set `true` on staging/preview |
 
@@ -35,11 +35,11 @@ Without `NEXT_PUBLIC_APP_BASE_URL`, enquiry submissions succeed and are logged s
 
 ## Landing composition
 
-1. Hero — Qiko Labs / Pulse + Book a demo (Calendly) + Enquire
-2. Pulse use cases
-3. Path / how it works
-4. Custom builds strip
-5. Signal vs Labs delineation (Two ways)
+1. Hero — Qiko Labs / Pulse + Book a call (Calendly) + Enquire
+2. How Labs ships / delivery path
+3. Why digital workers + build stages
+4. Client case studies
+5. Platform handles / audience / Two ways (Pulse + Labs)
 6. FAQ
 7. Contact band — Calendly + Labs enquiry form
 8. Closing CTA

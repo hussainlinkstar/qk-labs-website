@@ -9,7 +9,7 @@ export default function CtaBand() {
             <div className="cta-copy">
               <h3>Ready to ship with Labs?</h3>
               <p>
-                Book a demo for Pulse on CRM, or start a custom AI worker build with real-customer
+                Book a call for Pulse on CRM, or start a custom AI worker build with real-customer
                 validation baked in.
               </p>
             </div>
@@ -20,7 +20,7 @@ export default function CtaBand() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Book a demo
+                Book a call
                 <img src="/qiko-static/assets/icons/arrow-white.svg" alt="" />
               </a>
               <a href="/#enquire" className="btn btn-outline">

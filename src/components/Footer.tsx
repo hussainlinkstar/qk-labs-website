@@ -21,8 +21,8 @@ export default function Footer() {
             <div className="footer-col">
               <span className="footer-col-title">Product</span>
               <a href="/#see">How Labs ships</a>
+              <a href="/#case-studies">Case studies</a>
               <a href="/#build-how">Workers</a>
-              <a href="/pricing">Pricing</a>
             </div>
             <div className="footer-col">
               <span className="footer-col-title">Company</span>
@@ -33,7 +33,7 @@ export default function Footer() {
             <div className="footer-col">
               <span className="footer-col-title">Get started</span>
               <a href={siteConfig.calendlyUrl} rel="noopener noreferrer" target="_blank">
-                Book a demo
+                Book a call
               </a>
               <a href="/contact">Talk to Labs</a>
               <a href="/enterprise">Enterprise</a>

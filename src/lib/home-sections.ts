@@ -212,21 +212,6 @@ export const audienceCards = [
   },
 ] as const;
 
-export const creatorStory = {
-  name: "Alex",
-  role: "French Villa Expert",
-  paragraphs: [
-    "Alex has spent a decade curating the best French villas for high-end travellers. With Qiko Labs, they described their ideal assistant in plain English, uploaded villa notes, client preferences, and past recommendations — and let Labs handle models and infrastructure.",
-    "Alex now licenses that knowledge so travellers can find the right property 24/7, grounded in expert judgment rather than a generic chat model.",
-  ],
-  metrics: [
-    { label: "Time to first worker", value: "1 day" },
-    { label: "Response time", value: "Sub-second" },
-    { label: "Revenue model", value: "Per agency" },
-  ],
-  tags: ["Digital twin", "Earn while you sleep", "Full control"],
-} as const;
-
 export const homeFaqs: FaqItem[] = [
   {
     q: "What is Qiko Labs?",
@@ -242,6 +227,6 @@ export const homeFaqs: FaqItem[] = [
   },
   {
     q: "How do I get started?",
-    a: "Book a Labs demo for Pulse, or enquire about a custom build. Tell us the systems involved and the outcome you need.",
+    a: "Book a call for Pulse, or enquire about a custom build. Tell us the systems involved and the outcome you need.",
   },
 ];

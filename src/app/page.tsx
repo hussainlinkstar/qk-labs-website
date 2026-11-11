@@ -1,7 +1,7 @@
 import AudienceSection from "@/components/AudienceSection";
 import BuildHowSection from "@/components/BuildHowSection";
+import CaseStudiesSection from "@/components/CaseStudiesSection";
 import ContactBand from "@/components/ContactBand";
-import CreatorStory from "@/components/CreatorStory";
 import CtaBand from "@/components/CtaBand";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
@@ -12,6 +12,7 @@ import FaqAccordion from "@/components/shared/FaqAccordion";
 import FeatureCardsSection from "@/components/shared/FeatureCardsSection";
 import StepsPathSection from "@/components/shared/StepsPathSection";
 import TwoWaysSection from "@/components/shared/TwoWaysSection";
+import { caseStudies } from "@/lib/case-studies";
 import {
   audienceCards,
   buildWorkerSteps,
@@ -56,7 +57,11 @@ export default function HomePage() {
           description="Four stages to take a Labs build from orchestrator squad to native workers in your workflows."
           steps={buildWorkerSteps}
         />
-        <CreatorStory />
+        <CaseStudiesSection
+          title="Real Labs builds. Real outcomes."
+          description="First-draft case studies — custom workers and Pulse — so buyers can see how engagement looks before the call."
+          items={caseStudies}
+        />
         <PlatformHandles
           title="What Qiko handles for you"
           description="Everything between your expertise and a production-ready worker — models, infra, data, security, APIs, and iteration."

@@ -30,7 +30,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              Book a demo
+              Book a call
               <img src="/qiko-static/assets/icons/arrow-white.svg" alt="" />
             </a>
             <a href="/#enquire" className="btn btn-outline">

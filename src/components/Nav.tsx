@@ -6,7 +6,6 @@ import { siteConfig } from "@/lib/site-config";
 
 const PAGE_LINKS = [
   { href: "/", label: "Home" },
-  { href: "/pricing", label: "Pricing" },
   { href: "/about", label: "About" },
   { href: "/enterprise", label: "Enterprise" },
   { href: "/contact", label: "Contact" },
@@ -64,7 +63,7 @@ export default function Nav() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              Book a demo
+              Book a call
             </a>
           </div>
           <button
@@ -107,7 +106,7 @@ export default function Nav() {
           target="_blank"
           onClick={closeMobile}
         >
-          Book a demo
+          Book a call
         </a>
       </nav>
     </header>
